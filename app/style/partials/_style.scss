@@ -1,0 +1,163 @@
+*, :after, :before {
+	box-sizing: border-box;
+}
+html {
+	font-size: $font-size-root;
+}
+body{
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height;
+	background-color: #f1f1f1;
+	color: $gray;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5{
+	margin: 0;
+}
+h1{
+	font-size: $font-size-h1;
+	font-weight: bold;
+	color: $gray-dark;
+}
+h2{
+	font-weight: bold;
+	color: $gray-dark;
+	font-size: $font-size-h2;
+}
+h3{
+	font-size: $font-size-h3;
+}
+h4{
+	font-size: $font-size-h4;
+}
+h5{
+	font-size: $font-size-h5;
+}
+p{
+	margin: 1rem 0;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	// color: $link-color;
+}
+
+/*================================================
+	Стили для всех кнопок
+==================================================*/
+.btn{
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	transition: all .3s;
+	font-size: 1rem;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.btn_st-1{
+	padding: .7em 1.4em;
+	background-color: $color-st-1;
+	&:hover{
+		background-color: rgba(0, 0, 0, 0.16);
+	}
+}
+.btn_st-2{
+	background-color: $color-st-2;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding: 1em 1.4em;
+	border-radius: 7px;
+	&:hover{
+		background-color: rgba(0, 0, 0, 0.16);
+	}
+}
+
+/*================================================
+	Убираем стили у списка
+==================================================*/
+.unstyle{
+	padding: 0;
+	list-style: none;
+}
+
+
+/*================================================
+	Маска на фон
+================================================*/
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+/*================================================
+			Основная разметка сайта
+================================================*/
+.wrapper{
+	max-width: $container-max-width-xxxl;
+	margin: auto;
+	position: relative;
+	background-color: #fff;
+}
+
+/*Отступы для контейнера*/
+.container_padd{
+	padding: 100px 0;
+}
+.container__title{
+	text-align: center;
+	p{
+		font-size: 1.333em;
+		margin: .3em;
+	}
+}
+.container__title_line{
+	margin-bottom: 40px;
+	&:after{
+		content: " ";
+		display: inline-block;
+		width: 50px;
+		height: 5px;
+		background: $gray-dark;
+	}
+}
+
+/*================================================
+	Сообщение о ошибках и успехах
+==================================================*/
+// .error{
+// 	color: $brand-error;
+// }
+// .success{
+// 	color: $brand-success;
+// }
+
+/*================================================================================
+							header (contaco-info + logo + menu)
+================================================================================*/
+@import "partials/_header.scss";
+
+
+
+
+/*================================================================================
+							Страница index.html
+================================================================================*/
+@import "partials/_SIndex.scss";
+
+
+
+/*================================================================================
+							Общие разделы
+================================================================================*/
+
+
+/*================================================================================
+										МЕДИА ЗАПРОСЫ
+================================================================================*/
+@import "partials/_media.scss";

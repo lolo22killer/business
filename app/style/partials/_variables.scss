@@ -1,0 +1,72 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$fonts_dir:                  "../fonts/";
+$font-family-sans-serif:     Helvetica, Arial, sans-serif;
+$font-family-serif:          Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:           $font-family-sans-serif;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root:             15px;
+$font-size-base:             1rem;
+
+// $font-size-lg:               1.25rem;
+// $font-size-sm:               .875rem;
+// $font-size-xs:               .75rem;
+
+$font-size-h1:               2.5rem;
+$font-size-h2:               2.3rem;
+$font-size-h3:               1.75rem;
+$font-size-h4:               1.5rem;
+$font-size-h5:               1.25rem;
+$font-size-h6:               1rem;
+
+$line-height:                1;
+
+//Стилевой оформление
+$color-st-1:               #dd2a24; //красный
+$color-st-2:               #f8cd53; //желтый
+
+$brand-red:                #de2b24;
+$brand-blue:               #1287bf;
+$brand-gray:               #f0f2f4;
+$brand-gray-darken:        #2a2a2a;
+
+
+$bgc-header-info:          $brand-gray; //Серый
+$bgc-main:                 $brand-blue; //Синий
+$bgc-work:                 $brand-red; //Красный
+$bgc-email:                $brand-blue; //Синий
+$bgc-footer:               $brand-gray-darken; //Темно Серый
+
+
+/* Цвет для текста*/
+$gray:                      #626262; //Основной цвет теста
+$gray-dark:                 #424242; //Темнее основного
+$gray-light:                #818a91; //Светлее основного
+
+
+
+
+
+// // Links
+// //
+// // Style anchor elements.
+
+// $link-color:                 $brand-primary;
+// $link-decoration:            none;
+// $link-hover-color:           darken($link-color, 45%);
+// $link-hover-decoration:      underline;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-width-sm:   600px;
+$container-max-width-md:   768px;
+$container-max-width-lg:   992px;
+$container-max-width-xl:   1200px;
+$container-max-width-xxl:  1366px;
+$container-max-width-xxxl: 1400px; //wrapper

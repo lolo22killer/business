@@ -1,0 +1,41 @@
+/*================================================================================
+							Страница SIndex.html
+================================================================================*/
+
+.main{
+	background: $bgc-main url("../img/banner.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.main__container{
+	min-height: 590px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+.main__content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	h2{
+		font-size: 3rem;
+		color: #fff;
+		margin: .2em;
+	}
+	p{
+		font-size: 2rem;
+		font-weight: lighter;
+	}
+	.btn_st-2{
+		margin-top: 30px;
+	}
+}
+.main_overlay{
+  background-color: rgba(18, 135, 191, 0.22);
+}
+
+.about-grid{
+
+}
