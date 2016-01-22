@@ -18,15 +18,14 @@ h1, h2, h3, h4, h5{
 h1{
 	font-size: $font-size-h1;
 	font-weight: bold;
-	color: $gray-dark;
 }
 h2{
 	font-weight: bold;
-	color: $gray-dark;
 	font-size: $font-size-h2;
 }
 h3{
 	font-size: $font-size-h3;
+	font-weight: bold;
 }
 h4{
 	font-size: $font-size-h4;
@@ -53,24 +52,25 @@ a{
 	transition: all .3s;
 	font-size: 1rem;
 	border-radius: 4px;
-	color: #fff;
+	color: #fff !important;
 }
 
 .btn_st-1{
+	border-radius: 4px;
 	padding: .7em 1.4em;
 	background-color: $color-st-1;
 	&:hover{
-		background-color: rgba(0, 0, 0, 0.16);
+		background-color: darken($color-st-1, 20);
 	}
 }
 .btn_st-2{
 	background-color: $color-st-2;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding: 1em 1.4em;
-	border-radius: 7px;
+	border-radius: 6px;
 	&:hover{
-		background-color: rgba(0, 0, 0, 0.16);
+		background-color: darken($color-st-2, 20);
 	}
 }
 
@@ -107,26 +107,43 @@ a{
 
 /*Отступы для контейнера*/
 .container_padd{
-	padding: 100px 0;
+	padding-top: 110px;
+	padding-bottom: 130px;
 }
-.container__title{
+.section__title{
+	line-height: 1.857rem;
 	text-align: center;
 	p{
-		font-size: 1.333em;
+		font-size: 1.429rem;
 		margin: .3em;
 	}
 }
-.container__title_line{
+.section__title_line{
 	margin-bottom: 40px;
 	&:after{
 		content: " ";
 		display: inline-block;
-		width: 50px;
+		width: 47px;
 		height: 5px;
 		background: $gray-dark;
 	}
 }
-
+.st1.section__title_line{
+	&:after{
+		background: $gray-dark;
+	}
+}
+.st2.section__title_line{
+	&:after{
+		background: #fff;
+	}
+}
+.st1{
+	color: $gray-dark;
+}
+.st2{
+	color: #fff;
+}
 /*================================================
 	Сообщение о ошибках и успехах
 ==================================================*/

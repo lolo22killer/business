@@ -5,31 +5,49 @@
 
 
 /*================================================================================
-							Для десктопов
+							Для 992px
 ================================================================================*/
+@media (max-width: 992px) {
+	.main-header__logo{
+		text-align: center;
+		a{
+			display: inline-block;
+		}
+		i{
+			float: none;
+		}
+	}
+	.main-header__navigation {
+    text-align: center;
+	}
 
 
-						/*=====1366px====*/
+	.app__grid-item{
+		.col-text {
+	    padding: 10px 30px;
+		}
+	}
 
-@media screen and (max-width: $container-max-width-xxl) {}
-
-						/*=====1200px====*/
-
-@media screen and (max-width: $container-max-width-xl) {}
-
-							/*=====992px====*/
-
-@media screen and (max-width: $container-max-width-lg) {}
-
-				/*=====940px меню ====*/
-@media screen and (max-width: 940px) {}
+}
 
 
 /*================================================================================
-							Для планшетов 768px
+							Для 768px
 ================================================================================*/
 
-@media screen and (max-width: $container-max-width-md) {}
+@media (max-width: 768px) {
+
+	.app__grid-item{
+		[class^=col-] {
+	    display: block;
+	    margin: auto;
+		}
+		.col-text {
+	    padding: 20px 0;
+		}
+	}
+
+}
 
 
 
