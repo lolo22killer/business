@@ -53,3 +53,32 @@
 	}
 
 }
+
+
+/*================================================================================
+							Для 600px
+================================================================================*/
+
+@media (max-width: 600px) {
+
+	.col-ls-10{
+		 position: relative;
+	  min-height: 1px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+		float: left;
+		width: 83.333%;
+	}
+	.col-ls-pull-10 {
+  	right: 83.333%;
+	}
+	.col-ls-push-10 {
+  	left: 83.333%;
+	}
+	.col-ls-pull-0 {
+    right: auto;
+  }
+  .col-ls-push-0 {
+    left: auto;
+  }
+}
