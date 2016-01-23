@@ -100,7 +100,6 @@ a{
 			Основная разметка сайта
 ================================================*/
 .wrapper{
-	max-width: $container-max-width-xxxl;
 	margin: auto;
 	position: relative;
 	background-color: #fff;
@@ -148,9 +147,18 @@ a{
 /*================================================
 	Сообщение о ошибках и успехах
 ==================================================*/
-// .error{
-// 	color: $brand-error;
-// }
+
+label.error{
+	color: $brand-red;
+  text-align: center;
+  display: block;
+}
+input.error{
+	box-shadow: 0 0 2px $brand-red;
+}
+input.valid{
+	box-shadow: 0 0 2px green;
+}
 // .success{
 // 	color: $brand-success;
 // }
