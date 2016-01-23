@@ -15,17 +15,19 @@
 }
 .main__content{
 	width: 100%;
+	// line-height: 1;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: #fff;
 	h2{
-		font-size: 3rem;
+		font-size: 3.429rem;
 		color: #fff;
 		margin: .2em;
 	}
 	p{
-		font-size: 2rem;
+		font-size: 2.143rem;
 		font-weight: lighter;
 	}
 	.btn_st-2{
@@ -39,6 +41,7 @@
 
 .about__grid-item{
 	text-align: center;
+	overflow: hidden;
 	.figure{
 		background: url(../img/sprites.png) no-repeat;
 		margin: auto;
@@ -55,6 +58,9 @@
 		&.ads{
 			background-position: -172px 0;
 		}
+	}
+	h3{
+		font-size: 1.571rem;
 	}
 	p{
 		font-family: "Open Sans";
@@ -267,6 +273,9 @@
 
 
 .main-footer{
+	h2{
+		font-size: 2.071rem;
+	}
 	text-align: center;
 	background-color: #2a2a2a;
 	.sub{

@@ -14,6 +14,7 @@ body{
 }
 h1, h2, h3, h4, h5{
 	margin: 0;
+	line-height: 1;
 }
 h1{
 	font-size: $font-size-h1;
@@ -50,14 +51,14 @@ a{
 	text-align: center;
 	font-weight: bold;
 	transition: all .3s;
-	font-size: 1rem;
+	font-size: 1.071rem;
 	border-radius: 4px;
 	color: #fff !important;
 }
 
 .btn_st-1{
 	border-radius: 4px;
-	padding: .7em 1.4em;
+	padding: .5em 1.53em;
 	background-color: $color-st-1;
 	&:hover{
 		background-color: darken($color-st-1, 20);
@@ -66,8 +67,8 @@ a{
 .btn_st-2{
 	background-color: $color-st-2;
 	text-transform: uppercase;
-	font-size: 1.5rem;
-	padding: 1em 1.4em;
+	font-size: 1.643rem;
+	padding: 1.05em 1.75em;
 	border-radius: 6px;
 	&:hover{
 		background-color: darken($color-st-2, 20);
